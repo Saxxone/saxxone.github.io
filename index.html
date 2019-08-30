@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="calculator.css" >
+  <meta rel="icon" href=".assets/icon.png" type="image/png"  sizes="32x32">
+  <meta name="theme-color" content="#000000">
+  <title>Calculator</title>
+</head>
+<body>
+  <!--Calculator canvas-->  
+  <div class="wrapper">
+    <!--Main display area-->
+    <div class="display">
+      <!--Result display area-->
+      <div id="resultDisplay" class="resultDisplay">
+      </div>
+      <!--Operator Display-->
+      <div class="operatorDisplay" id="operatorDisplay">
+        
+      </div>
+      <!--Input display area-->
+      <div class="inputDisplay" id="inputDisplay">
+        
+      </div>
+    </div>
+    <!--Input area-->
+    <div class="input">
+      <!--Buttons are divided into rows for styling convenience special keys are given class name "special"-->
+      <!--First row-->
+      <form class="row1">
+        <input type="button" id="clear" class="delete" value="AC">
+        <input type="button"  class="special" value="">
+        <input type="button" class="special" value="">
+        <input type="button" id="addition" class="special" value="+">
+      </form>
+      <!--Second row-->
+      <form class="row2">
+        <input type="button" value="7" id="seven" class="digit" />
+        <input type="button" value="8" id="eight" class="digit" />
+        <input type="button" value="9" id="nine" class="digit" />
+        <input type="button" id="subtract" class="special" value="-">
+      </form>
+      <!--Third row-->
+      <form class="row3">
+        <input type="button" value="4" id="four" class="digit" />
+        <input type="button" value="5" id="five" class="digit" />
+        <input type="button" value="6" id="six" class="digit" />
+        <input type="button" id="multiply" class="special" value="x">
+      </form>
+      <!--Fourth row-->
+      <form class="row4">
+        <input type="button" id="one" value="1" class="digit" />
+        <input type="button" value="2" id="two" class="digit" />
+        <input type="button" value="3" id="three" class="digit" />
+        <input type="button" id="division" class="special" value="÷">
+      </form>
+      <!--Fifth row-->
+      <form class="row5">
+        <input type="button" value="" id="decimal" />
+        <input type="button" value="0" id="zero" class="digit" />
+        <input id="empty" type="button" />
+        <input type="button" id="equals" class="equals" value="=">
+      </form>
+      <!--the equals to button
+      <div>
+        <button id="equals" class="input equals">=
+      </div> -->
+    </div>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+</html>

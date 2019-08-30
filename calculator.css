@@ -1,0 +1,83 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+}
+
+/*Define general style rules*/
+html, body {
+  font-family: Lato, sans-serif;
+}
+
+input {
+  border: none;
+  background-color: inherit;
+  color: inherit;
+  font-size: 36px;
+  font-family: Lato;
+  flex: 1;
+}
+
+.operatorDisplay {
+  text-align: right;
+  color: rgb(24, 2, 2);
+  padding-right: 10px;
+}
+
+#equals {
+  color: #cdd4f1;
+  background-color: #eb0131;
+  font-size: 24px;
+}
+
+.special, .delete {
+  color: #eb0131;
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+/*320 X 640 screens*/
+@media (min-width: 360px) {
+  .wrapper{
+    background-color: rgb(243, 240, 240);
+    width: 360px;
+    height: 640px;
+  }
+  .display {
+    height: 250px;
+  }
+
+  .resultDisplay {
+    font-size: 100px;
+    color: #707070;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 10px;
+    height: 125px;
+  }
+
+  .inputDisplay {
+    font-size: 50px;
+    color: #eb0131;
+    text-align: right;
+    padding-right: 10px;
+  }
+  .input {
+    background-color: #0d0f1c;
+    color: #cdd4f1;
+    padding: 20px 30px;
+    height: 390px;
+  }
+
+  input {
+    height: 80px;
+  }
+}
